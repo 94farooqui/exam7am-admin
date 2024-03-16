@@ -7,7 +7,7 @@ import Track from './../assets/track-icon.svg'
 export const sections = [
     {
         icon:Assessment,
-        title:"Assessment",
+        title:"Tech Assessment",
         text:"Technical skill assessment for career opportunities",
         url:"/assessment"
     },
