@@ -5,6 +5,15 @@ import CzechFlag from './../assets/country-flags/Czech.png'
 import DenmarkFlag from './../assets/country-flags/denmark.png'
 import FindlandFlag from './../assets/country-flags/findland.png'
 
+
+import IndianFlag from './../assets/country-flags/Asia/India.png'
+import BangladeshFlag from './../assets/country-flags/Asia/Bangladesh.png'
+import ChinaFlag from './../assets/country-flags/Asia/China.png'
+import IndonesianFlag from './../assets/country-flags/Asia/Indonesia.png'
+import JapanFlag from './../assets/country-flags/Asia/Japan.png'
+import MalaysianFlag from './../assets/country-flags/Asia/Malaysia.png'
+import PakistanFlag from './../assets/country-flags/Asia/Pakistan.png'
+
 export const regions = ["Europe", "Asia", "North America", "South America" , "Australia" , "Africa"]
 
 export const globe = [
@@ -41,28 +50,28 @@ export const globe = [
         region:"Asia",
         countries: [
             {
-                name:'Austria',
-                image:AustriaFlag
+                name:'Bangladesh',
+                image:BangladeshFlag
             },
             {
-                name:'Belgium',
-                image:BelgiumFlag
+                name:'China',
+                image:ChinaFlag
             },
             {
-                name:'Bosnia',
-                image:BosniaFlag
+                name:'India',
+                image:IndianFlag
             },
             {
-                name:'Czech',
-                image:CzechFlag
+                name:'Indonesia',
+                image:IndonesianFlag
             },
             {
-                name:'Denmark',
-                image:DenmarkFlag
+                name:'Japan',
+                image:JapanFlag
             },
             {
-                name:'Finland',
-                image:FindlandFlag
+                name:'Malaysia',
+                image:MalaysianFlag
             },
         ]
     },
@@ -70,28 +79,20 @@ export const globe = [
         region:"North America",
         countries: [
             {
-                name:'Austria',
+                name:'Canada',
                 image:AustriaFlag
             },
             {
-                name:'Belgium',
+                name:'Mexico',
                 image:BelgiumFlag
             },
             {
-                name:'Bosnia',
+                name:'Panama',
                 image:BosniaFlag
             },
             {
-                name:'Czech',
+                name:'United States',
                 image:CzechFlag
-            },
-            {
-                name:'Denmark',
-                image:DenmarkFlag
-            },
-            {
-                name:'Finland',
-                image:FindlandFlag
             },
         ]
     },
@@ -99,27 +100,27 @@ export const globe = [
         region:"South America",
         countries: [
             {
-                name:'Austria',
+                name:'Argentina',
                 image:AustriaFlag
             },
             {
-                name:'Belgium',
+                name:'Brazil',
                 image:BelgiumFlag
             },
             {
-                name:'Bosnia',
+                name:'Chile',
                 image:BosniaFlag
             },
             {
-                name:'Czech',
+                name:'Colombia',
                 image:CzechFlag
             },
             {
-                name:'Denmark',
+                name:'Peru',
                 image:DenmarkFlag
             },
             {
-                name:'Finland',
+                name:'Uruguay',
                 image:FindlandFlag
             },
         ]
@@ -128,28 +129,12 @@ export const globe = [
         region:"Australia",
         countries: [
             {
-                name:'Austria',
+                name:'Australia',
                 image:AustriaFlag
             },
             {
-                name:'Belgium',
+                name:'New zealand',
                 image:BelgiumFlag
-            },
-            {
-                name:'Bosnia',
-                image:BosniaFlag
-            },
-            {
-                name:'Czech',
-                image:CzechFlag
-            },
-            {
-                name:'Denmark',
-                image:DenmarkFlag
-            },
-            {
-                name:'Finland',
-                image:FindlandFlag
             },
         ]
     },
@@ -157,28 +142,8 @@ export const globe = [
         region:"Africa",
         countries: [
             {
-                name:'Austria',
+                name:'South Africa',
                 image:AustriaFlag
-            },
-            {
-                name:'Belgium',
-                image:BelgiumFlag
-            },
-            {
-                name:'Bosnia',
-                image:BosniaFlag
-            },
-            {
-                name:'Czech',
-                image:CzechFlag
-            },
-            {
-                name:'Denmark',
-                image:DenmarkFlag
-            },
-            {
-                name:'Finland',
-                image:FindlandFlag
             },
         ]
     },
