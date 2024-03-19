@@ -8,22 +8,31 @@ import Signup from "./pages/Signup";
 import Header from "./components/Header";
 import SchoolProgram from "./pages/SchoolProgram";
 import DrivingCountry from "./pages/DrivingCountry";
+import NewAssessmentCategory from "./pages/NewAssessmentCategory";
+import AssessmentQuestionsList from "./pages/AssessmentQuestionsList";
 
 const App = () => {
-  return (<BrowserRouter>
-    <Header/>
+  return (
+    <BrowserRouter>
       <Routes>
-        <Route path='/' element={<Home/>} />
-        <Route path='/sign-in' element={<Signin/>} />
-        <Route path='/sign-up' element={<Signup/>} />
-        <Route path='/quiz' element={<QuizListPage/>} />
-        <Route path='/assessment' element={<AssessmentListPage/>} />
-        <Route path='/driving' element={<DrivingHomePage/>} />
-        <Route path="/driving/:country" element={<DrivingCountry/>} />
-        <Route path='/school' element={<SchoolProgram/>} />
+        <Route path="/" element={<Home />}>
+          <Route path="/quiz" element={<QuizListPage />} />
+          <Route path="/assessment" element={<AssessmentListPage />}>
+          </Route>
+          <Route path="/assessment/:id" element={<AssessmentQuestionsList />} />
+          <Route path="/assessment/new" element={<NewAssessmentCategory />} />
+          <Route path="/driving" element={<DrivingHomePage />} />
+          <Route path="/driving/:country" element={<DrivingCountry />} />
+          <Route path="/school" element={<SchoolProgram />} />
+        </Route>
       </Routes>
-      
-    </BrowserRouter>)
-}
+
+      <Routes>
+        <Route path="/sign-in" element={<Signin />} />
+        <Route path="/sign-up" element={<Signup />} />
+      </Routes>
+    </BrowserRouter>
+  );
+};
 
 export default App;

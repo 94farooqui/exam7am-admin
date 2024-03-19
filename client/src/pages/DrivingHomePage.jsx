@@ -6,8 +6,7 @@ const DrivingHomePage = () => {
   return (
    <div className='w-full max-w-[1200px] mx-auto'>
     <div className='py-8 flex flex-col gap-12'>
-        <DrivingHomeHero/>
-        <DrivingCountries/>
+        <h2>Driving</h2>
     </div>
    </div>
   )
