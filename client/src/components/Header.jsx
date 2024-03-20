@@ -6,10 +6,10 @@ import { Link } from "react-router-dom";
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false)
   return (
-    <div className="w-full bg-[#0E416D]">
-      <div className="flex justify-between items-center px-4 py-4">
-        <h2 className="text-white font-bold font-poppins">Dashboard</h2>
-        <ul className="hidden sm:flex gap-4 text-white">
+    <div className="w-full bg-white">
+      <div className="flex h-20 justify-between items-center px-4 py-4">
+        <h2 className="text-gray-600 font-bold font-poppins">Dashboard</h2>
+        <ul className="hidden sm:flex gap-4 text-gray-600">
           <Link to='/'><li>Signin</li></Link>
         </ul>
         <div className=" sm:hidden">

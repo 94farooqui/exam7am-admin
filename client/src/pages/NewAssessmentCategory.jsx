@@ -3,7 +3,7 @@ import React from 'react'
 const NewAssessmentCategory = () => {
   return (
     <div className='max-w-[1200px] mx-auto font-poppins py-12'>
-        <div className='w-full bg-white p-8'>
+        <div className='w-full bg-white shadow-md p-12'>
             <h2 className='text-slate-500 text-2xl font-bold mb-6'>Add Assessment Category</h2>
             <form className='flex flex-col gap-4'>
                 <div className='flex flex-col gap-1'>
