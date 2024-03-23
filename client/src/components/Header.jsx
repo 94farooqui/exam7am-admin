@@ -7,8 +7,8 @@ const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false)
   return (
     <div className="w-full bg-white">
-      <div className="flex h-20 justify-between items-center px-4 py-4">
-        <h2 className="text-gray-600 font-bold font-poppins">Dashboard</h2>
+      <div className="flex h-16 justify-between items-center px-4 py-4">
+        <h2 className="text-gray-600 text-xl font-semibold font-poppins">Dashboard</h2>
         <ul className="hidden sm:flex gap-4 text-gray-600">
           <Link to='/'><li>Signin</li></Link>
         </ul>

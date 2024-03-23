@@ -8,20 +8,22 @@
       "q": "When approaching a stop sign, you should:",
       "options": [
         {
-          "key": "A",
-          "option": "Slow down, but only stop if there is oncoming traffic"
+          "option": "A",
+          "value": "Slow down, but only stop if there is oncoming traffic"
         },
         {
-          "key": "B",
-          "option": "Stop completely and check for traffic before proceeding"
+          "option": "B",
+          "value": "Stop completely and check for traffic before proceeding"
         },
         {
-          "key": "C",
-          "option": "Speed up to clear the intersection quickly"
+          "option": "C",
+          "value": "Speed up to clear the intersection quickly"
         },
         {
-          "key": "D",
-          "option": "Honk your horn to alert other drivers"
+          "option"
+          : "D",
+          "value"
+          : "Honk your horn to alert other drivers"
         }
       ]
     },

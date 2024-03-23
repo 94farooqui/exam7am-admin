@@ -9,29 +9,46 @@ import Header from "./components/Header";
 import SchoolProgram from "./pages/SchoolProgram";
 import DrivingCountry from "./pages/DrivingCountry";
 import NewAssessmentCategory from "./pages/NewAssessmentCategory";
-import AssessmentQuestionsList from "./pages/AssessmentQuestionsList";
+import AssessmentDetails from "./pages/AssessmentDetails";
+
+import {
+  QueryClient,
+  QueryClientProvider,
+  useQuery,
+} from '@tanstack/react-query'
+import AssessmentNewQuestion from "./pages/AssessmentNewQuestion";
+
+const queryClient = new QueryClient()
 
 const App = () => {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />}>
-          <Route path="/quiz" element={<QuizListPage />} />
-          <Route path="/assessment" element={<AssessmentListPage />}>
+    <QueryClientProvider  client={queryClient}>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />}>
+            <Route path="/quiz" element={<QuizListPage />} />
+            <Route path="/assessment" element={<AssessmentListPage />}></Route>
+            <Route
+              path="/assessment/:id"
+              element={<AssessmentDetails />}
+            />
+            <Route
+              path="/assessment/:id/newQuestion"
+              element={<AssessmentNewQuestion />}
+            />
+            <Route path="/assessment/new" element={<NewAssessmentCategory />} />
+            <Route path="/driving" element={<DrivingHomePage />} />
+            <Route path="/driving/:country" element={<DrivingCountry />} />
+            <Route path="/school" element={<SchoolProgram />} />
           </Route>
-          <Route path="/assessment/:id" element={<AssessmentQuestionsList />} />
-          <Route path="/assessment/new" element={<NewAssessmentCategory />} />
-          <Route path="/driving" element={<DrivingHomePage />} />
-          <Route path="/driving/:country" element={<DrivingCountry />} />
-          <Route path="/school" element={<SchoolProgram />} />
-        </Route>
-      </Routes>
+        </Routes>
 
-      <Routes>
-        <Route path="/sign-in" element={<Signin />} />
-        <Route path="/sign-up" element={<Signup />} />
-      </Routes>
-    </BrowserRouter>
+        <Routes>
+          <Route path="/sign-in" element={<Signin />} />
+          <Route path="/sign-up" element={<Signup />} />
+        </Routes>
+      </BrowserRouter>
+    </QueryClientProvider>
   );
 };
 
