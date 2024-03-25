@@ -10,7 +10,7 @@ const initialValues = {
 };
 
 const AssessmentNewQuestion = () => {
-  const formRef = useRef()
+  const formRef = useRef(null)
   const params = useParams();
   const { id } = params;
   const navigate = useNavigate()
@@ -178,6 +178,7 @@ const AssessmentNewQuestion = () => {
               onChange={(e) => onInputChange(e)}
               className="border border-slate-200 p-2 rounded-md "
             >
+              <option value="">Select</option>
               <option value="one">Option 01</option>
               <option value="two">Option 02</option>
               <option value="three">Option 03</option>
