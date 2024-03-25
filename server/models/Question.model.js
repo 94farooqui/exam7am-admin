@@ -2,8 +2,8 @@ import mongoose from "mongoose";
 
 const optionSchema = new mongoose.Schema({
     key : {
-        type: Number,
-        enum: [1,2,3,4]
+        type: String,
+        enum: ["one" , "two" , "three" , "four"]
     },
     value: String
 })
@@ -14,7 +14,7 @@ export const questionSchema = new mongoose.Schema({
     image: String,
     options : [optionSchema],
     correctAnswer: {
-        type: Number,
+        type: String,
         enum : ["one","two","three","four"]
     }
 })

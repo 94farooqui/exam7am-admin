@@ -37,3 +37,12 @@ export const createNewAssessment = async (assessment) => {
     }
     else return false
 }
+
+export const createNewQuestion = async ({id,question}) => {
+    console.log(id,question)
+    const response = await axios.post(`${serverURL}/api/assessments/${id}`,question)
+    if(response.status === 201){
+        return true
+    }
+    else return false
+}

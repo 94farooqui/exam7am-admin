@@ -21,9 +21,11 @@ const NewAssessmentCategory = () => {
   const navigate = useNavigate()
 
 
-  const [file, setFile] = useState(null);
+  
+  
   const [newError, setNewError] = useState(null);
   const [uploadPercentage, setUploadPercentage] = useState(0);
+  const [file,setFile] = useState(null)
 
   const onInputChange = (e) => {
     setNewCategory({ ...newCategory, [e.target.name]: e.target.value });
