@@ -1,5 +1,5 @@
 import axios from "axios";
-const serverURL = "https://exam7am-admin-2.onrender.com/";
+const serverURL = "http://localhost:2000";
 
 export const getAllAssessment = async () => {
   const response = await axios.get(`${serverURL}/api/assessments`);
